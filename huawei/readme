@@ -1,0 +1,9 @@
+S3328 is huawei switch, but S3528 & S3928 are H3C switchs,  so the steps we shall import the adapters of these devices is :
+ 
+step 1: import  the file of  "H3C vendor.xml",
+ 
+step 2: import the file of  "trail of dis-version.xml"
+ 
+step 3: import the files of  "Huawei Switch.xml" and "H3C Switch.xml"
+ 
+ 

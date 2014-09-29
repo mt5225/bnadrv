@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceTypeMap>
+    <vendors>
+        <vendor>
+            <guid>0B81D754-91D1-4F02-99AF-2B2AA6E42241</guid>
+            <name>H3C</name>
+        </vendor>
+    </vendors>
+</deviceTypeMap>

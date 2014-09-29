@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceTypeMap>
+    <!--
+        BNA Version: 8.5.01.000 b125 u012 
+        Exported Date: 09/29/14 14:24:37
+        Enabled: Yes
+        State: Baseline
+        Requires Merge: No
+        Last Modified: 
+        Annotation: -->
+    <!-- ================================================================== -->
+    <deviceType>
+        <guid>22A732A5-4B0B-4D61-A086-CBBEEC1F4753</guid>
+        <name>Huawei Switch/Router</name>
+        <vendor>31143E64-C0EA-49BF-8B6A-F71E8BDAF924</vendor>
+        <supportedModelInfo>Quidway AR Series; Quidway S2000 Series; H3C S5120-24P-EI</supportedModelInfo>
+        <supportedOsVersionInfo>For Quidway AR Series: VRP 3.x.
+            For Quidway S2000 Series: VRP 3.x.
+            For H3C S5120-24P-EI: Comware 5.20</supportedOsVersionInfo>
+        <alwaysUseDiff>false</alwaysUseDiff>
+        <ignoreBlanks>false</ignoreBlanks>
+        <defaultMergeCommandGuid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</defaultMergeCommandGuid>
+        <defaultRestoreCommandGuid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</defaultRestoreCommandGuid>
+        <supportsSsh2Access>true</supportsSsh2Access>
+        <supportsTunneledTransfer>true</supportsTunneledTransfer>
+        <supportsFtpTransfer>true</supportsFtpTransfer>
+        <supportsPrivPassword>true</supportsPrivPassword>
+        <supportsForwardImageDeletion>true</supportsForwardImageDeletion>
+        <imageLoaderClassName>
+          com.bmc.bcan.engine.network.devices.H3CImageLoader
+        </imageLoaderClassName>
+        <supportsSyslogAutoArchiveTriggerInfo>true</supportsSyslogAutoArchiveTriggerInfo>
+        <generalInfo><![CDATA[
+            <ul class="noSpacing">
+            <li>
+                SSH2 is supported only for H3C S5120-24P-EI Switch/Router.
+            </li>
+            <li>
+                OS image snapshot and deploy are supported only for H3C
+                S5120-24P-EI Switch/Router. Note that copying image files via
+                TFTP can take a long time; 8MB may take over an hour to copy,
+                so be sure to set the "Timeout for Image File Transfers"
+                system parameter accordingly.
+                <p>
+                    During an image deploy, the new image will be deployed to ALL slots.
+                </p>
+                <p>
+                    During an image deploy, if the old image was not deleted, it will be
+                    made into the backup image on all slots.
+                </p>
+            </li>
+            <li>
+                BNA changes the vty "screen-length" value to zero which may modify the
+                device's running configuration.
+            </li>
+            </ul>
+        ]]></generalInfo>
+        <snmpOids>
+            <snmpOid category="2">1.3.6.1.4.1.43.1.16.4.3.44</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.2011.2.23.23</snmpOid>
+            <snmpOid category="1">1.3.6.1.4.1.2011.2.2</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.4</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.10</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.11</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.35</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.36</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.37</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.40</snmpOid>
+            <snmpOid category="1">1.3.6.1.4.1.25506.1.73</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.209</snmpOid>
+            <snmpOid category="2">1.3.6.1.4.1.25506.1.520</snmpOid>
+            <!-- http://www.oidview.com/mibs/2011/HUAWEI-MIB.html -->
+        </snmpOids>
+        <supportedConfigurationTrailDeclarations>
+            <supportedTrail>
+                <!-- Running configuration -->
+                <guid>02C89A1F-A5D2-44B0-AE1E-B714EB0E3FAF</guid>
+                <format>ascii</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797069</backupCommandGuid>
+                <mergeCommandGuid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</mergeCommandGuid>
+            </supportedTrail>
+            <supportedTrail>
+                <!-- Startup configuration -->
+                <guid>1D168B48-15CC-416E-AB4A-88E2E7104E2D</guid>
+                <format>ascii</format>
+                <backupCommandGuid>4E005EF8-BAC1-BD15-EF63-DDC6D2547FFE</backupCommandGuid>
+                <restoreCommandGuid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</restoreCommandGuid>
+            </supportedTrail>
+        </supportedConfigurationTrailDeclarations>
+        <commentLines>
+            <line>^\s*#</line>
+        </commentLines>
+        <sortedCommands>
+            <line>^\s*info-center\s+loghost\s+((?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))|(::|(([a-fA-F0-9]{1,4}):){7}(([a-fA-F0-9]{1,4}))|(:(:([a-fA-F0-9]{1,4})){1,6})|((([a-fA-F0-9]{1,4}):){1,6}:)|((([a-fA-F0-9]{1,4}):)(:([a-fA-F0-9]{1,4})){1,6})|((([a-fA-F0-9]{1,4}):){2}(:([a-fA-F0-9]{1,4})){1,5})|((([a-fA-F0-9]{1,4}):){3}(:([a-fA-F0-9]{1,4})){1,4})|((([a-fA-F0-9]{1,4}):){4}(:([a-fA-F0-9]{1,4})){1,3})|((([a-fA-F0-9]{1,4}):){5}(:([a-fA-F0-9]{1,4})){1,2}))</line>
+        </sortedCommands>
+        <configProcessors>
+            <textProcessor fileTransfer="true" incoming="true"
+                replace="\x00a" search="\x01b\x019" trails="1D168B48-15CC-416E-AB4A-88E2E7104E2D"/>
+            <!-- replace ^[^Y with LF for inbound startup-config transfer so that
+                 it matches with the tunneled backup version of running-config -->
+        </configProcessors>
+        <sensitiveLines>
+            <line>^\s*set authentication password \w+ (\S+)\s*$</line>
+            <line>^\s*super password level \d+ \w+ (\S+)\s*$</line>
+            <line>^\s*password \w+ (\S+)\s*$</line>
+            <line>^\s*authentication password \w+ (\S+)\s*$</line>
+            <line>^\s*snmp-agent community read\s+(\S+)</line>
+            <line>^\s*snmp-agent community write\s+(\S+)</line>
+            <line>^\s*key authentication (\S+)\s*$</line>
+            <line>^\s*key accounting (\S+)\s*$</line>
+            <line>^\s*ospf authentication-mode md5 \d (\S+)\s*$</line>
+            <line>^\s*ospf authentication-mode simple (\S+)\s*$</line>
+            <line>^\s*Auth Server Encryption Key\s*\S\s*(\S+)\s*$</line>
+            <line>^\s*Acct Server Encryption Key\s*\S\s*(\S+)\s*$</line>
+        </sensitiveLines>
+        <deviceCommand>
+            <!-- login -->
+            <guid>0E8DB22F-DEF8-987E-1AFB-7BE8BBCC9BEA</guid>
+            <condition test="%accessMode% -EQ- telnet">
+                <interaction optional="true" regex="true">
+                    <prompt>([Uu]ser.*:|[Ll]ogin.*:)</prompt>
+                    <command>%username%</command>
+                    <response>[Pp]assword:</response>
+                    <error retry="true">([Uu]ser.*:|[Ll]ogin.*:)</error>
+                    <error retry="true">timeout expired</error>
+                </interaction>
+                <interaction regex="true">
+                    <prompt>[Pp]assword:</prompt>
+                    <command sensitive="true">%password%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <error retry="true">%Wrong password!</error>
+                    <error retry="true">%Bad password!</error>
+                    <error retry="true">Login failed</error>
+                    <error retry="true">Login invalid</error>
+                    <error retry="true">imeout expired</error>
+                </interaction>
+            </condition>
+            <condition test="(-NOT- (-EXISTS- terminalLogin)) -OR- (-EXISTS- terminalPrivLogin)">
+                <interaction regex="true">
+                    <prompt>&gt;</prompt>
+                    <command>super</command>
+                    <response property="cmd.needsPrivUsername">[Uu]sername:</response>
+                    <response property="cmd.needsPrivPassword">[Pp]assword</response>
+                    <response>&gt;</response>
+                    <!-- when already enabled -->
+                </interaction>
+                <condition test="-EXISTS- cmd.needsPrivUsername">
+                    <interaction regex="true">
+                        <prompt>[Uu]sername:</prompt>
+                        <command>%privUsername%</command>
+                        <response property="cmd.needsPrivPassword">[Pp]assword</response>
+                    </interaction>
+                </condition>
+                <condition test="-EXISTS- cmd.needsPrivPassword">
+                    <interaction regex="true">
+                        <prompt>[Pp]assword</prompt>
+                        <command sensitive="true">%privPassword%</command>
+                        <pauseSeconds>1</pauseSeconds>
+                        <response>&gt;</response>
+                        <error retry="true">%Wrong password!</error>
+                        <error retry="true">%Bad password!</error>
+                        <error retry="true">Access Denied</error>
+                        <!-- retry, in case AAA server is unable to handle
+                             our request at this instant. -->
+                    </interaction>
+                </condition>
+            </condition>
+            <condition test="-NOT- (-EXISTS- terminalLogin)">
+                <interaction>
+                    <prompt>&gt;</prompt>
+                    <command>undo terminal monitor</command>
+                    <response>&gt;</response>
+                </interaction>
+                <interaction>
+                    <prompt>&gt;</prompt>
+                    <command>undo terminal logging</command>
+                    <response>&gt;</response>
+                </interaction>
+                <interaction>
+                    <prompt>&gt;</prompt>
+                    <command>undo terminal debugging</command>
+                    <response>&gt;</response>
+                </interaction>
+                <interaction>
+                    <prompt>&gt;</prompt>
+                    <command/>
+                    <capture>
+                        <property name="prompt"/>
+                    </capture>
+                </interaction>
+                <!-- We are unable to determine the setting for our vty screen-length setting
+                     without confusing it with other vty settings; therefore we must just set
+                     the value to zero and leave it
+                -->
+                <interaction>
+                    <prompt>%prompt%</prompt>
+                    <command>display users</command>
+                    <response>%prompt%</response>
+                    <capture buffer="^\s*[+]\s+\d+\s+VTY\s*(\d+)\s*.*" ignoreFailure="true">
+                        <property name="uservtyline">{1}</property>
+                    </capture>
+                </interaction>
+                <interaction>
+                    <prompt>%prompt%</prompt>
+                    <command>system-view</command>
+                    <response>]</response>
+                </interaction>
+                <interaction>
+                    <prompt>]</prompt>
+                    <command>user-interface vty %uservtyline%</command>
+                    <response>]</response>
+                </interaction>
+                <interaction>
+                    <prompt>]</prompt>
+                    <command>screen-length 0</command>
+                    <response>]</response>
+                </interaction>
+                <interaction>
+                    <!-- Exit from system view -->
+                    <prompt>]</prompt>
+                    <command omitEOL="true">\x01A</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- discover core -->
+            <guid>1E91FAD6-FBB7-5D7C-120F-ABD77583A086</guid>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>display version</command>
+                <response>%prompt%</response>
+                <capture
+                    buffer=".*(VRP).*\s*(?i)Software.*\s*(?i)version (\d+).(\d+).*" ignoreFailure="true">
+                    <property name="disc.versionMajor">{2}</property>
+                    <property name="disc.versionMinor">{3}</property>
+                    <property name="disc.version">{2}.{3}</property>
+                    <property name="disc.imageName">{1} {2}.{3}</property>
+                    <property name="disc.versionShort">{2}.{3}</property>
+                </capture>
+                <capture
+                    buffer=".*(VRP).*\s*(?i)Software.*\s*(?i)version (\d+).(\d+).*\s*(?i)Release (\d+)" ignoreFailure="true">
+                    <property name="disc.versionMajor">{2}</property>
+                    <property name="disc.versionMinor">{3}</property>
+                    <property name="disc.versionBuild">{4}</property>
+                    <property name="disc.version">{2}.{3}.{4}</property>
+                    <property name="disc.imageName">{1} {2}.{3}.{4}</property>
+                    <property name="disc.versionShort">{2}.{3}</property>
+                </capture>
+                <capture
+                    buffer=".*(Comware)\s*(?i)Software.*\s*(?i)version (\d+).(\d+).*\s*(?i)Release (\S+)" ignoreFailure="true">
+                    <property name="disc.versionMajor">{2}</property>
+                    <property name="disc.versionMinor">{3}</property>
+                    <property name="disc.versionBuild">{4}</property>
+                    <property name="disc.version">{2}.{3}.{4}</property>
+                    <property name="disc.imageName">{1} {2}.{3}.{4}</property>
+                    <property name="disc.versionShort">{2}.{3}</property>
+                </capture>
+                <capture
+                    buffer="^\s*(?i)(Quidway)\s*(?i)\S*\s*\S*\s+(\S*-*\S+)\s+uptime.*" ignoreFailure="true">
+                    <property name="disc.model">{1} {2}</property>
+                    <property name="disc.vendor">{1}</property>
+                </capture>
+                <capture buffer=".*(H3C)\s+(\S*-\S*)\s+.*" ignoreFailure="true">
+                    <property name="disc.model">{2}</property>
+                    <property name="disc.vendor">{1}</property>
+                </capture>
+                <capture buffer=".*(H3C)\s+Comware\s+Platform.*" ignoreFailure="true">
+                    <property name="disc.vendor">{1}</property>
+                </capture>
+                <capture buffer=".*(HP)\s+(\S*-\S*-\S*\s+\S+)\s+.*" ignoreFailure="true">
+                    <property name="disc.model">{1} {2}</property>
+                    <property name="disc.vendor">H3C</property>
+                    <!-- HP acquired H3C Comware, so use H3C logic below -->
+                </capture>
+                <capture buffer="(\S*-\S*-\S*)\s+with.*" ignoreFailure="true">
+                    <property name="disc.model">{1}</property>
+                </capture>
+            </interaction>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>display boot-loader</command>
+                <response>%prompt%</response>
+                <capture
+                    buffer="current boot app is:\s+([\w-]+):/?(\S+)" ignoreFailure="true">
+                    <property name="disc.imageFilesystem">{1}</property>
+                    <property name="disc.imageFilename">{2}</property>
+                </capture>
+            </interaction>
+            <condition test="%discoverTransferMode% -EQ- true">
+                <assign property="disc.supportsFtp" value="true"/>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- discover image details -->
+            <guid>2993A257-F634-4FFA-560F-B921EE64D6AC</guid>
+            <!-- for now, only H3C devices support image save/load -->
+            <assert condition="%disc.vendor% -EQ- H3C"
+                key="assert.osimage.notSupported" onFailure="skip"/>
+            <assert condition="(-EXISTS- disc.imageFilename)"
+                key="assert.imageFilename.notFound" onFailure="abort"/>
+            <assert
+                condition="((-EXISTS- disc.imageFilesystem) -OR- (-EXISTS- targetImageFilesystem))"
+                key="assert.imageFilesystem.notFound" onFailure="abort"/>
+            <condition test="-NOT- (-EXISTS- targetImageFilesystem)">
+                <assign property="cmd.imageLoadLocation" value="%disc.imageFilesystem%"/>
+                <condition test="-EXISTS- disc.imageFilesystemOnMsfcSupervisorEngine">
+                    <assign property="cmd.imageLoadLocation" value="%disc.imageFilesystemOnMsfcSupervisorEngine%"/>
+                </condition>
+            </condition>
+            <condition test="-EXISTS- targetImageFilesystem">
+                <assign property="cmd.imageLoadLocation" value="%targetImageFilesystem%"/>
+            </condition>
+            <interaction timeoutSeconds="1800">
+                <!-- clear all vestige of deleted files before we check the
+                  free space; this can take a while (just like squeeze!)-->
+                <prompt>%prompt%</prompt>
+                <command>reset recycle-bin /force</command>
+                <response property="cmd.clearRecycleBin">Clear files in recycle-bin</response>
+                <response>%prompt%</response>
+                <!-- don't care if this is a bad command, just go on -->
+            </interaction>
+            <condition test="-EXISTS- cmd.clearRecycleBin">
+                <interaction timeoutSeconds="1800">
+                    <command>y</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>dir %disc.imageFilesystem%:</command>
+                <response>%prompt%</response>
+                <capture
+                    buffer="\n\s*?\d+\s+\D+?(\d+).*\s+(\Q%disc.imageFilename%\E)$" ignoreFailure="true">
+                    <property name="disc.imageFileSize">{1}</property>
+                </capture>
+            </interaction>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>dir %cmd.imageLoadLocation%:</command>
+                <response>%prompt%</response>
+                <capture
+                    buffer="(\d+)\s+(\D+)\s+total\s+\((\d+)\s+(\D+)\s+free\)" ignoreFailure="true">
+                    <property name="disc.imageFilesystemTotalSize">{1}</property>
+                    <property name="disc.imageFilesystemFreeSize">{3}</property>
+                    <property name="disc.imageFilesystemTotalSizeUnits">{2}</property>
+                    <property name="disc.imageFilesystemFreeSizeUnits">{4}</property>
+                </capture>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy running to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797069</guid>
+            <supportsTunneled>true</supportsTunneled>
+            <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                <prompt>%prompt%</prompt>
+                <command>display current-configuration</command>
+                <response>%prompt%</response>
+                <capture>
+                    <property name="fileContents"/>
+                </capture>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy startup to net -->
+            <guid>4E005EF8-BAC1-BD15-EF63-DDC6D2547FFE</guid>
+            <assert condition="-NOT- %transferMode% -EQ- tunneled"
+                key="assert.tunneled.backup.startup.notSupported" onFailure="abort"/>
+            <condition test="%disc.vendor% -EQ- H3C">
+                <!--  some H3C switches have the startup config as
+                      config.cfg and some as startup.cfg; ensure all have
+                      it as startup.cfg -->
+                <interaction>
+                    <command>dir startup.cfg</command>
+                    <response property="cmd.noStartupCfgFile">File can't be found</response>
+                    <response>%prompt%</response>
+                </interaction>
+                <condition test="-EXISTS- cmd.noStartupCfgFile">
+                    <interaction>
+                        <command>save</command>
+                        <response property="cmd.saveStart">you sure</response>
+                        <response>%prompt%</response>
+                        <error>Unrecognized command</error>
+                    </interaction>
+                    <condition test="-EXISTS- cmd.saveStart">
+                        <interaction>
+                            <command>y</command>
+                            <response property="cmd.saveStartFilename">lease input the file name</response>
+                            <response>%prompt%</response>
+                        </interaction>
+                    </condition>
+                    <condition test="-EXISTS- cmd.saveStartFilename">
+                        <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <command>startup.cfg</command>
+                            <response>successfully</response>
+                            <response>%prompt%</response>
+                            <error>Error</error>
+                        </interaction>
+                    </condition>
+                </condition>
+            </condition>
+            <condition test="%transferMode% -EQ- tftp">
+                <condition test="%disc.vendor% -EQ- Quidway">
+                    <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                        <prompt>%prompt%</prompt>
+                        <command>tftp %address% put vrpcfg.cfg %transferFilename%</command>
+                        <response property="cmd.commandInvalid">nrecognized command</response>
+                        <response>uploaded successfully</response>
+                        <response>Uploading the file successfully</response>
+                        <error>Uploading fails</error>
+                        <error>Unable to transfer</error>
+                        <error>Error</error>
+                    </interaction>
+                    <condition test="-EXISTS- cmd.commandInvalid">
+                        <interaction>
+                            <prompt>%prompt%</prompt>
+                            <command>system-view</command>
+                            <response>]</response>
+                            <error>Unrecognized command</error>
+                            <error>Incomplete command</error>
+                        </interaction>
+                        <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <command>tftp put vrpcfg.txt //%address%/%transferFilename%</command>
+                            <response>succeeds</response>
+                            <error>Uploading fails</error>
+                            <error>destination file should be on TFTP server</error>
+                            <error>Error</error>
+                        </interaction>
+                        <interaction>
+                            <command>quit</command>
+                            <response>%prompt%</response>
+                        </interaction>
+                    </condition>
+                </condition>
+                <condition test="%disc.vendor% -EQ- H3C">
+                    <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                        <prompt>%prompt%</prompt>
+                        <command>tftp %address% put startup.cfg %transferFilename%</command>
+                        <response>uploaded successfully</response>
+                        <error>Uploading fails</error>
+                        <error>Unable to transfer</error>
+                        <error>Error</error>
+                    </interaction>
+                </condition>
+            </condition>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction timeoutSeconds="150">
+                    <prompt>%prompt%</prompt>
+                    <command>ftp %address%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <response>User</response>
+                    <error>Can't connect to the remote host</error>
+                    <error>Unrecognized host or wrong IP address</error>
+                    <error>Error</error>
+                </interaction>
+                <interaction regex="true">
+                    <command>%ftpUsername%</command>
+                    <response>[Pp]assword</response>
+                </interaction>
+                <interaction>
+                    <command sensitive="true">%ftpPassword%</command>
+                    <response>ftp</response>
+                    <error>Connection closed</error>
+                </interaction>
+                <condition test="%disc.vendor% -EQ- Quidway">
+                    <interaction regex="true" timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                        <prompt>ftp</prompt>
+                        <command>put vrpcfg.cfg %transferFilename%</command>
+                        <response property="cmd.commandInvalid">Can't open file</response>
+                        <response>^\s*\S*226\s+\S+.*</response>
+                        <!-- 226 is the FTP return code for successful data transfer.-->
+                        <error>Error</error>
+                    </interaction>
+                    <condition test="-EXISTS- cmd.commandInvalid">
+                        <interaction regex="true" timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <prompt>ftp</prompt>
+                            <command>put vrpcfg.txt %transferFilename%</command>
+                            <response>^\s*\S*226\s+\S+.*</response>
+                            <!-- 226 is the FTP return code for successful data transfer.-->
+                            <error>Can't open file</error>
+                            <error>Error</error>
+                        </interaction>
+                    </condition>
+                </condition>
+                <condition test="%disc.vendor% -EQ- H3C">
+                    <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                        <prompt>ftp</prompt>
+                        <command>put startup.cfg %transferFilename%</command>
+                        <response>ftp</response>
+                        <error>Can't open file</error>
+                        <error>Error</error>
+                    </interaction>
+                </condition>
+                <interaction>
+                    <prompt>ftp</prompt>
+                    <command>quit</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to running -->
+            <guid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</guid>
+            <supportsTunneled>true</supportsTunneled>
+            <assert condition="%transferMode% -EQ- tunneled"
+                key="assert.onlyTunneledMerge.supported" onFailure="skip"/>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>system-view</command>
+                <response>]</response>
+            </interaction>
+            <loop input="fileContents" variable="fileLine">
+                <condition test="-NOT- (%loop.fileLine% -EQ- return)">
+                    <!-- Ignoring line return because it will exit system-view mode -->
+                    <interaction>
+                        <prompt>]</prompt>
+                        <command>%loop.fileLine%</command>
+                        <response>]</response>
+                        <syntaxErrorCheck property="syntaxErrorOccurred"/>
+                    </interaction>
+                </condition>
+                <!-- in config mode depending on the nesting
+                    level the prompt changes, so look for # -->
+                <break condition="(-EXISTS- stopTunnelingOnSyntaxErrors) -AND- (-EXISTS- syntaxErrorOccurred)"/>
+            </loop>
+            <interaction>
+                <!-- Exit from system view -->
+                <prompt>]</prompt>
+                <command omitEOL="true">\x01A</command>
+                <response>&gt;</response>
+            </interaction>
+            <interaction>
+                <!-- recapture any new prompt -->
+                <command/>
+                <capture>
+                    <property name="prompt"/>
+                </capture>
+            </interaction>
+            <syntaxErrors>
+                <syntaxError>.*[Uu]nrecognized command.*</syntaxError>
+                <syntaxError>.*[Tt]oo many parameters found at.*</syntaxError>
+                <syntaxError>.*[Ii]ncomplete command found at.*</syntaxError>
+                <syntaxError>.*[Ww]rong parameter found at.*</syntaxError>
+            </syntaxErrors>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to startup -->
+            <guid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</guid>
+            <condition test="%transferMode% -EQ- tftp">
+                <condition test="%disc.vendor% -EQ- Quidway">
+                    <interaction>
+                        <prompt>%prompt%</prompt>
+                        <command>tftp %address% get %transferFilename% vrpcfg.cfg</command>
+                        <response property="cmd.commandInvalid">nrecognized command</response>
+                        <response>Overwrite</response>
+                        <error>Unknown host</error>
+                        <error>Failed to get file</error>
+                    </interaction>
+                    <condition test="-NOT- (-EXISTS- cmd.commandInvalid)">
+                        <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <prompt>Overwrite</prompt>
+                            <command>y</command>
+                            <response>downloaded successfully</response>
+                            <error>Error</error>
+                            <error>Unable to transfer</error>
+                            <error>fails</error>
+                        </interaction>
+                    </condition>
+                    <condition test="-EXISTS- cmd.commandInvalid">
+                        <interaction>
+                            <prompt>%prompt%</prompt>
+                            <command>system-view</command>
+                            <response>]</response>
+                            <error>Unrecognized command</error>
+                            <error>Incomplete command</error>
+                        </interaction>
+                        <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <command>tftp get //%address%/%transferFilename% vrpcfg.txt</command>
+                            <pauseSeconds>5</pauseSeconds>
+                            <response>succeeds</response>
+                            <error>Unrecognized command</error>
+                            <error>fails</error>
+                            <error>destination file should be on TFTP server</error>
+                            <error>Error</error>
+                            <error>Failed to get file</error>
+                        </interaction>
+                        <interaction>
+                            <command>quit</command>
+                            <response>%prompt%</response>
+                        </interaction>
+                    </condition>
+                </condition>
+                <condition test="%disc.vendor% -EQ- H3C">
+                    <interaction>
+                        <prompt>%prompt%</prompt>
+                        <command>tftp %address% get %transferFilename% startup.cfg</command>
+                        <response property="cmd.commandInvalid">nrecognized command</response>
+                        <response>Overwrite</response>
+                        <error>Unknown host</error>
+                        <error>Failed to get file</error>
+                    </interaction>
+                    <condition test="-NOT- (-EXISTS- cmd.commandInvalid)">
+                        <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <prompt>Overwrite</prompt>
+                            <command>y</command>
+                            <response>downloaded successfully</response>
+                            <error>Error</error>
+                            <error>Unable to transfer</error>
+                            <error>fails</error>
+                        </interaction>
+                    </condition>
+                </condition>
+            </condition>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>%prompt%</prompt>
+                    <command>display startup</command>
+                    <response property="cmd.commandInvalid">nrecognized command</response>
+                    <response>%prompt%</response>
+                </interaction>
+                <interaction timeoutSeconds="150">
+                    <prompt>%prompt%</prompt>
+                    <command>ftp %address%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <response>User</response>
+                    <error>Can't connect to the remote host</error>
+                    <error>Unrecognized host or wrong IP address</error>
+                    <error>Error</error>
+                </interaction>
+                <interaction regex="true">
+                    <command>%ftpUsername%</command>
+                    <response>[Pp]assword</response>
+                </interaction>
+                <interaction>
+                    <command sensitive="true">%ftpPassword%</command>
+                    <response>ftp</response>
+                    <error>Connection closed</error>
+                </interaction>
+                <condition test="%disc.vendor% -EQ- Quidway">
+                    <condition test="-NOT- (-EXISTS- cmd.commandInvalid)">
+                        <interaction regex="true" timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <prompt>ftp</prompt>
+                            <command>get %transferFilename% vrpcfg.cfg</command>
+                            <response>^\s*\S*226\s+\S+.*</response>
+                            <!-- 226 is the FTP return code for successful data transfer.-->
+                            <error>Can't open file</error>
+                            <error>Can't open data connection</error>
+                            <error>Error</error>
+                        </interaction>
+                    </condition>
+                    <condition test="-EXISTS- cmd.commandInvalid">
+                        <interaction regex="true" timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                            <prompt>ftp</prompt>
+                            <command>get %transferFilename% vrpcfg.txt</command>
+                            <response>^\s*\S*226\s+\S+.*</response>
+                            <!-- 226 is the FTP return code for successful data transfer.-->
+                            <error>Can't open file</error>
+                            <error>Can't open data connection</error>
+                            <error>Error</error>
+                        </interaction>
+                    </condition>
+                </condition>
+                <condition test="%disc.vendor% -EQ- H3C">
+                    <interaction regex="true" timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                        <prompt>ftp</prompt>
+                        <command>get %transferFilename% startup.cfg</command>
+                        <response>Overwrite</response>
+                        <error>Can't open file</error>
+                        <error>Can't open data connection</error>
+                        <error>Error</error>
+                    </interaction>
+                    <interaction>
+                        <prompt>Overwrite</prompt>
+                        <command>y</command>
+                        <response>ftp</response>
+                    </interaction>
+                </condition>
+                <interaction>
+                    <prompt>ftp</prompt>
+                    <command>quit</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy running to startup -->
+            <guid>7023D2D2-1A14-7DB8-14F6-8B8485C5015E</guid>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>save</command>
+                <response>you sure</response>
+            </interaction>
+            <interaction>
+                <command>y</command>
+                <response>successfully</response>
+                <response property="cmd.keyPress">press the enter key</response>
+            </interaction>
+            <condition test="-EXISTS- cmd.keyPress">
+                <interaction>
+                    <prompt>press the enter key</prompt>
+                    <command/>
+                    <response property="cmd.overwrite">overwrite?</response>
+                    <response>successfully</response>
+                </interaction>
+                <condition test="-EXISTS- cmd.overwrite">
+                    <interaction>
+                        <command>y</command>
+                        <response>Configuration is saved to device successfully.</response>
+                    </interaction>
+                </condition>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy image to net -->
+            <guid>89F733B6-4C59-CF2B-BD10-CD9EA41BA6DB</guid>
+            <!-- for now, only H3C devices support image save/load -->
+            <assert condition="%disc.vendor% -EQ- H3C"
+                key="assert.osimage.notSupported" onFailure="skip"/>
+            <assert
+                condition="(-EXISTS- disc.imageFilesystem) -AND- (-EXISTS- disc.imageFilename)"
+                key="assert.oldImage.filelocation.notDiscovered" onFailure="skip"/>
+            <condition test="%transferMode% -EQ- tftp">
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxBinaryTransferDurationSeconds%">
+                    <prompt>%prompt%</prompt>
+                    <command>tftp %address% put %disc.imageFilesystem%:/%disc.imageFilename% %transferFilename%</command>
+                    <response>uploaded successfully</response>
+                    <error>Uploading fails</error>
+                    <error>Unable to transfer</error>
+                    <error>Error</error>
+                </interaction>
+            </condition>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction timeoutSeconds="150">
+                    <prompt>%prompt%</prompt>
+                    <command>ftp %address%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <response>User</response>
+                    <error>Can't connect to the remote host</error>
+                    <error>Unrecognized host or wrong IP address</error>
+                    <error>Error</error>
+                </interaction>
+                <interaction regex="true">
+                    <command>%ftpUsername%</command>
+                    <response>[Pp]assword</response>
+                </interaction>
+                <interaction>
+                    <command sensitive="true">%ftpPassword%</command>
+                    <response>[ftp]</response>
+                    <error>Connection closed</error>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxBinaryTransferDurationSeconds%">
+                    <command>put %disc.imageFilesystem%:/%disc.imageFilename% %transferFilename%</command>
+                    <response>[ftp]</response>
+                    <error>Can't open file</error>
+                    <error>Error</error>
+                </interaction>
+                <interaction>
+                    <prompt>[ftp]</prompt>
+                    <command>quit</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+            <finallyBlock>
+                <!-- if ftp error occurred, need to exit out of ftp -->
+                <interaction>
+                    <command/>
+                    <response property="cmd.stuckInFtp">[ftp]</response>
+                    <response>%prompt%</response>
+                </interaction>
+                <condition test="-EXISTS- cmd.stuckInFtp">
+                    <interaction>
+                        <prompt>[ftp]</prompt>
+                        <command>quit</command>
+                        <response>%prompt%</response>
+                    </interaction>
+                </condition>
+            </finallyBlock>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to image -->
+            <guid>905E3CF3-2DAE-2FBE-D466-B933FB675F5D</guid>
+            <!-- for now, only H3C devices support image save/load -->
+            <assert condition="%disc.vendor% -EQ- H3C"
+                key="assert.osimage.notSupported" onFailure="skip"/>
+            <assert condition="-EXISTS- disc.imageFilesystem"
+                key="assert.imageSave.imageFileSystem.notDiscovered.error" onFailure="abort"/>
+            <condition test="-NOT- (-EXISTS- targetImageFilesystem)">
+                <assign property="cmd.imageLoadLocation" value="%disc.imageFilesystem%"/>
+            </condition>
+            <condition test="-EXISTS- targetImageFilesystem">
+                <assign property="cmd.imageLoadLocation" value="%targetImageFilesystem%"/>
+            </condition>
+            <condition test="%transferMode% -EQ- tftp">
+                <interaction timeoutSeconds="%maxBinaryTransferDurationSeconds%">
+                    <prompt>%prompt%</prompt>
+                    <command>tftp %address% get %transferFilename% %cmd.imageLoadLocation%:/%transferAlias%</command>
+                    <response property="cmd.overwrite">Overwrite</response>
+                    <response>downloaded successfully</response>
+                    <error>Unknown host</error>
+                    <error>Unable to resolve hostname</error>
+                    <error>Failed to get file</error>
+                    <error>Unable to open file</error>
+                    <error>Unable to transfer</error>
+                    <error>File not found</error>
+                    <error>nrecognized command</error>
+                </interaction>
+                <condition test="-EXISTS- cmd.overwrite">
+                    <interaction timeoutSeconds="%maxBinaryTransferDurationSeconds%">
+                        <command>y</command>
+                        <response>downloaded successfully</response>
+                        <error>Error</error>
+                        <error>Unable to transfer</error>
+                        <error>Failed to get file</error>
+                        <error>Unable to open file</error>
+                        <error>File not found</error>
+                        <error>fails</error>
+                    </interaction>
+                </condition>
+            </condition>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction timeoutSeconds="150">
+                    <prompt>%prompt%</prompt>
+                    <command>ftp %address%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <response>User</response>
+                    <error>Can't connect to the remote host</error>
+                    <error>Unrecognized host or wrong IP address</error>
+                    <error>nrecognized command</error>
+                    <error>Error</error>
+                </interaction>
+                <interaction regex="true">
+                    <command>%ftpUsername%</command>
+                    <response>[Pp]assword</response>
+                </interaction>
+                <interaction>
+                    <command sensitive="true">%ftpPassword%</command>
+                    <response>[ftp]</response>
+                    <error>Connection closed</error>
+                </interaction>
+                <interaction timeoutSeconds="%maxBinaryTransferDurationSeconds%">
+                    <command>get %transferFilename% %cmd.imageLoadLocation%:/%transferAlias%</command>
+                    <response property="cmd.overwrite">Overwrite</response>
+                    <response>[ftp]</response>
+                    <error>Can't open file</error>
+                    <error>Can't open data connection</error>
+                    <error>Error</error>
+                </interaction>
+                <condition test="-EXISTS- cmd.overwrite">
+                    <interaction timeoutSeconds="%maxBinaryTransferDurationSeconds%">
+                        <command>y</command>
+                        <response>[ftp]</response>
+                        <error>Error</error>
+                    </interaction>
+                </condition>
+                <interaction>
+                    <prompt>[ftp]</prompt>
+                    <command>quit</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+            <interaction>
+                <command>boot-loader file %cmd.imageLoadLocation%:/%transferAlias% slot all main</command>
+                <response>Continue?</response>
+                <error>specified device is invalid</error>
+                <error>file is invalid</error>
+                <error>file doesn't exist</error>
+                <error>Incomplete command</error>
+                <error>Unrecognized command</error>
+                <error>Too many parameters</error>
+            </interaction>
+            <interaction>
+                <command>y</command>
+                <response>file will be used as the main boot file</response>
+                <error>specified device is invalid</error>
+                <error>file is invalid</error>
+                <error>file doesn't exist</error>
+                <error>Incomplete command</error>
+                <error>Unrecognized command</error>
+                <error>Too many parameters</error>
+            </interaction>
+            <condition test="-NOT- -EXISTS- imageWasDeleted">
+                <!-- when current image was not deleted, make it the backup image -->
+                <interaction>
+                    <command>boot-loader file %disc.imageFilesystem%:/%disc.imageFilename% slot all backup</command>
+                    <response property="cmd.continue">Continue?</response>
+                    <response>%prompt%</response>
+                    <!-- ignore any errors, since already installed the new image -->
+                </interaction>
+                <condition test="-EXISTS- cmd.continue">
+                    <interaction>
+                        <command>y</command>
+                        <response>%prompt%</response>
+                    </interaction>
+                </condition>
+            </condition>
+            <finallyBlock>
+                <!-- if ftp error occurred, need to exit out of ftp -->
+                <interaction>
+                    <command/>
+                    <response property="cmd.stuckInFtp">[ftp]</response>
+                    <response>%prompt%</response>
+                </interaction>
+                <condition test="-EXISTS- cmd.stuckInFtp">
+                    <interaction>
+                        <prompt>[ftp]</prompt>
+                        <command>quit</command>
+                        <response>%prompt%</response>
+                    </interaction>
+                </condition>
+            </finallyBlock>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- declare image -->
+            <guid>A11600D7-30A0-4378-6B50-A7449E2AAE9A</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- delete image -->
+            <guid>B1B1198E-FF0E-7791-D77C-32901BC11901</guid>
+            <condition test="-NOT- (-EXISTS- targetImageFilesystem)">
+                <assign property="cmd.imageLoadLocation" value="%disc.imageFilesystem%"/>
+                <condition test="-EXISTS- disc.imageFilesystemOnMsfcSupervisorEngine">
+                    <assign property="cmd.imageLoadLocation" value="%disc.imageFilesystemOnMsfcSupervisorEngine%"/>
+                </condition>
+            </condition>
+            <condition test="-EXISTS- targetImageFilesystem">
+                <assign property="cmd.imageLoadLocation" value="%targetImageFilesystem%"/>
+            </condition>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>delete %cmd.imageLoadLocation%:/%transferAlias%</command>
+                <response>?[Y/N]:</response>
+                <error>File can't be found</error>
+            </interaction>
+            <interaction>
+                <command>y</command>
+                <response>Done.</response>
+                <response>Deleted file</response>
+            </interaction>
+            <!-- flag that image has been deleted (either it was already gone
+              or the above commands did it), used in copy-net-to-image to know
+              if I can make current UNdeleted image into backup image-->
+            <assign property="imageWasDeleted" value="true"/>
+            <interaction timeoutSeconds="1800">
+                <!-- clear all vestige of deleted file so that new file can use
+                  freed space. This can take a while (just like squeeze!)-->
+                <prompt>%prompt%</prompt>
+                <command>reset recycle-bin /force</command>
+                <response property="cmd.clearRecycleBin">Clear files in recycle-bin</response>
+                <response>%prompt%</response>
+                <!-- don't care if this is a bad command, just go on -->
+            </interaction>
+            <condition test="-EXISTS- cmd.clearRecycleBin">
+                <interaction timeoutSeconds="1800">
+                    <command>y</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- activate image -->
+            <guid>C86240C6-54EF-F268-6242-BDC42F74E7C8</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- reboot -->
+            <guid>0DD240D0-5C2E-C943-CBE9-88E2E58F9454</guid>
+            <interaction>
+                <prompt>%prompt%</prompt>
+                <command>reboot</command>
+                <response>Continue</response>
+            </interaction>
+            <interaction disconnect="always" timeoutSeconds="%disconnectTimeoutSeconds%">
+                <command>y</command>
+                <pauseSeconds>1</pauseSeconds>
+                <error>%prompt%</error>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- logout -->
+            <guid>E6C631FC-33CA-812E-55D5-6CF772428705</guid>
+            <interaction>
+                <command/>
+                <response property="cmd.gotPrompt">%prompt%</response>
+            </interaction>
+            <condition test="-NOT- (-EXISTS- cmd.gotPrompt)">
+                <interaction>
+                    <!-- Exit system-view mode -->
+                    <prompt>]</prompt>
+                    <command omitEOL="true">\x01A</command>
+                    <response>%prompt%</response>
+                </interaction>
+            </condition>
+            <interaction disconnect="always" timeoutSeconds="%disconnectTimeoutSeconds%">
+                <prompt>%prompt%</prompt>
+                <command>quit</command>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- syntax scan -->
+            <guid>0F008DB4-DCDB-FE9E-BE50-24A86F88FBE2</guid>
+        </deviceCommand>
+    </deviceType>
+</deviceTypeMap>

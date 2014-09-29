@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceTypeMap>
+    <!--
+        BBNA Version : 8.1.02.000 b042 u008 
+        Exported Date : 05/15/12 08:57:19
+        Enabled : Yes
+        State : New
+        Requires Merge : No
+        Last Modified : 04/26/12 11:29:39 (sysadmin)
+        Annotation : -->
+<configurationTrailDeclarations>
+	<trail>
+		<guid>5716315D-E2B6-48D3-839E-9A70E7F53F8E</guid>
+		<sortOrder>1</sortOrder>
+		<name>NE01_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5716315D-E2B6-48D3-839E-9A70E7F53F1E</guid>
+		<sortOrder>2</sortOrder>
+		<name>NE01_sr_arch.cmp</name>
+	</trail>   
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-239381812F2B</guid>
+		<sortOrder>3</sortOrder>
+		<name>NE02_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-239381845F2B</guid>
+		<sortOrder>4</sortOrder>
+		<name>NE02_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AFEE</guid>
+		<sortOrder>5</sortOrder>
+		<name>NE03_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-37938184AF2B</guid>
+		<sortOrder>6</sortOrder>
+		<name>NE03_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AFBB</guid>
+		<sortOrder>7</sortOrder>
+		<name>NE04_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AFAB</guid>
+		<sortOrder>8</sortOrder>
+		<name>NE04_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF12</guid>
+		<sortOrder>9</sortOrder>
+		<name>NE05_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF23</guid>
+		<sortOrder>10</sortOrder>
+		<name>NE05_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF35</guid>
+		<sortOrder>11</sortOrder>
+		<name>NE06_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF22</guid>
+		<sortOrder>12</sortOrder>
+		<name>NE06_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF21</guid>
+		<sortOrder>13</sortOrder>
+		<name>NE07_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184A23D</guid>
+		<sortOrder>14</sortOrder>
+		<name>NE07_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF20</guid>
+		<sortOrder>15</sortOrder>
+		<name>NE08_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF1B</guid>
+		<sortOrder>16</sortOrder>
+		<name>NE08_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF2A</guid>
+		<sortOrder>17</sortOrder>
+		<name>NE09_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF26</guid>
+		<sortOrder>18</sortOrder>
+		<name>NE09_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF2E</guid>
+		<sortOrder>19</sortOrder>
+		<name>NE10_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF77</guid>
+		<sortOrder>20</sortOrder>
+		<name>NE10_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184BBA7</guid>
+		<sortOrder>21</sortOrder>
+		<name>NE11_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF0F</guid>
+		<sortOrder>22</sortOrder>
+		<name>NE11_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AFEB</guid>
+		<sortOrder>23</sortOrder>
+		<name>NE12_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF5D</guid>
+		<sortOrder>24</sortOrder>
+		<name>NE12_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF1D</guid>
+		<sortOrder>25</sortOrder>
+		<name>NE13_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF2D</guid>
+		<sortOrder>26</sortOrder>
+		<name>NE13_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF3D</guid>
+		<sortOrder>27</sortOrder>
+		<name>NE14_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AFFD</guid>
+		<sortOrder>28</sortOrder>
+		<name>NE14_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF28</guid>
+		<sortOrder>29</sortOrder>
+		<name>NE15_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF49</guid>
+		<sortOrder>30</sortOrder>
+		<name>NE15_sr_arch.cmp</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AF0D</guid>
+		<sortOrder>31</sortOrder>
+		<name>NE16_saverest.inf</name>
+	</trail>
+	<trail>
+		<guid>5137C14B-9B98-4AC0-BEB2-23938184AFDD</guid>
+		<sortOrder>32</sortOrder>
+		<name>NE16_sr_arch.cmp</name>
+	</trail>
+</configurationTrailDeclarations>
+    <deviceType>
+        <guid>D1B507E9-D031-4732-AD85-F640D20F208E</guid>
+        <name>Optical 3500_NP</name>
+        <vendor>88BB7B28-2F6D-4D0C-98F5-6A6ED89EE00E</vendor>
+        <alwaysUseDiff>false</alwaysUseDiff>
+        <ignoreBlanks>false</ignoreBlanks>
+        <defaultMergeCommandGuid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</defaultMergeCommandGuid>
+        <defaultRestoreCommandGuid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</defaultRestoreCommandGuid>
+        <supportsSsh2Access>true</supportsSsh2Access>
+        <sshPseudoTty>vt100</sshPseudoTty>
+        <supportsTunneledTransfer>true</supportsTunneledTransfer>
+        <supportsFtpTransfer>true</supportsFtpTransfer>
+        <promptsUnsavedChanges>true</promptsUnsavedChanges>
+        <supportsMultipleSecurityContexts>true</supportsMultipleSecurityContexts>
+        <snmpOids>
+            <snmpOid category="5">Needs to be set</snmpOid>
+        </snmpOids>
+        <supportedConfigurationTrailDeclarations>
+            <supportedTrail>
+                <guid>5716315D-E2B6-48D3-839E-9A70E7F53F8E</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797069</backupCommandGuid>
+            </supportedTrail>
+            <supportedTrail>
+                <guid>5716315D-E2B6-48D3-839E-9A70E7F53F1E</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797057</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-239381812F2B</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A79709D</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-239381845F2B</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A798269</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AFEE</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A79701D</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-37938184AF2B</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A79702D</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AFBB</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A7970FD</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AFAB</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A79703D</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF12</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797017</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF23</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A7970B5</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF35</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797089</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF22</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797167</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF21</guid>        
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797042</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184A23D</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797088</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF20</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797068</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF1B</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797061</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF2A</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797062</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF26</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797063</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF2E</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797066</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF77</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797064</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184BBA7</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797065</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF0F</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797070</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AFEB</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797071</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF5D</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797072</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF1D</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797073</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF2D</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797075</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF3D</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797074</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AFFD</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797098</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+                <guid>5137C14B-9B98-4AC0-BEB2-23938184AF28</guid>        
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797095</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AF49</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797077</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+			    <guid>5137C14B-9B98-4AC0-BEB2-23938184AF0D</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797078</backupCommandGuid>
+            </supportedTrail>
+			<supportedTrail>
+				<guid>5137C14B-9B98-4AC0-BEB2-23938184AFDD</guid>
+                <format>binary</format>
+                <backupCommandGuid>388DFC1D-2DF0-D833-5762-F5121A797080</backupCommandGuid>
+            </supportedTrail>
+        </supportedConfigurationTrailDeclarations>
+        <commentLines>
+            <line>^\s*!</line>
+        </commentLines>
+        <sensitiveLines>
+            <line>^\s*credentials \S+ (\S+)\s*$</line>
+        </sensitiveLines>
+        <deviceCommand>
+            <!-- login -->
+            <guid>0E8DB22F-DEF8-987E-1AFB-7BE8BBCC9BEA</guid>
+            <condition test="%accessMode% -EQ- telnet">
+                <interaction optional="true" regex="true">
+                    <prompt>([Uu]ser.*:|[Ll]ogin.*:)</prompt>
+                    <command>%username%</command>
+                    <response>[Pp]assword:</response>
+                    <error retry="true">([Uu]ser.*:|[Ll]ogin.*:)</error>
+                </interaction>
+                <interaction regex="true">
+                    <prompt>[Pp]assword:</prompt>
+                    <command sensitive="true">%password%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <error retry="true">([Pp]assword:|Login incorrect)</error>
+                    <error retry="true">([Uu]ser.*:|[Ll]ogin.*:)</error>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- discover core -->
+            <guid>1E91FAD6-FBB7-5D7C-120F-ABD77583A086</guid>
+            <condition test="%accessMode% -EQ- telnet">
+                <interaction>
+                    <prompt>&gt;</prompt>
+                    <command>telnet %device.aux_host% 10001</command>
+                    <response>&lt;</response>
+                </interaction>
+                <interaction>
+                    <prompt>&lt;</prompt>
+                    <command>ACT-USER::%privUsername%:BAK1::%privPassword%;</command>
+                    <pauseSeconds>5</pauseSeconds>
+                    <response>&lt;</response>
+                </interaction>
+                <interaction>
+                    <prompt>&lt;</prompt>
+                    <command>SAV-PROV-SOC:::BACK2::,:CHKALM=N;</command>
+                    <pauseSeconds>120</pauseSeconds>
+                    <response>SOC Database Save Completed</response>
+                </interaction>
+                <interaction>
+                    <prompt>&lt;</prompt>
+                    <command>CANC-USER::%privUsername%:SAV1;;</command>
+                    <response>&lt;</response>
+				</interaction>
+				<interaction>
+					<prompt>&lt;</prompt>                
+					<command omitEOL="true">\x01D</command>                  
+					<response>&gt;</response>
+				</interaction>
+				<interaction>
+					<prompt>&gt;</prompt>
+					<command>open %device.host% 23</command>                
+					<response>Do you want to send anyway(y/n):</response>                
+				</interaction>
+				<interaction>
+					<prompt>Do you want to send anyway(y/n):</prompt>
+					<command>y</command>                
+					<response>&gt;</response>                
+				</interaction>
+			</condition>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>&gt;</prompt>
+                    <command>ftp %device.aux_host%</command>
+                    <pauseSeconds>5</pauseSeconds>
+                    <response>220</response>
+                    <error>no address associated with name</error>
+                    <error>Connection refused</error>
+                    <error>timed out</error>
+                </interaction>
+                <interaction>
+                    <prompt>220</prompt>
+                    <command>%privUsername%</command>
+                    <response>331</response>
+                </interaction>
+                <interaction>
+                    <prompt>331</prompt>
+                    <command sensitive="true">%privPassword%</command>
+                    <response>ftp&gt;</response>
+                    <error>failed</error>
+                    <error>incorrect</error>
+                </interaction>
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>cd saverest</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- discover image details -->
+            <guid>2993A257-F634-4FFA-560F-B921EE64D6AC</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE01_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797069</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE01/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE01_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797057</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE01/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE02_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A79709D</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE02/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE02_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A798269</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE02/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE03_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A79701D</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE03/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE03_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A79702D</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE03/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE04_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A7970FD</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE04/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE04_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A79703D</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE04/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE05_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797017</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE05/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE05_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A7970B5</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE05/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE06_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797089</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE06/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE06_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797167</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE06/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE07_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797042</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE07/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE07_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797088</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE07/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE08_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797068</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE08/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE08_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797061</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE08/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE09_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797062</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE09/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE09_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797063</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE09/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE10_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797066</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE10/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE10_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797064</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE10/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE11_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797065</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE11/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE11_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797070</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE11/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE12_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797071</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE12/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE12_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797072</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE12/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE13_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797073</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE13/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE13_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797075</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE13/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE14_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797074</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE14/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE14_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797098</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE14/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE15_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797095</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE15/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE15_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797077</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE15/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+		<deviceCommand>
+		<!-- copy NE16_saverest.inf to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797078</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE16/saverest.inf c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy NE16_sr_arch.cmp to net -->
+            <guid>388DFC1D-2DF0-D833-5762-F5121A797080</guid>
+            <condition test="%transferMode% -EQ- ftp">
+                <interaction>
+                    <prompt>ftp&gt;</prompt>
+                    <command>binary</command>
+                    <response>ftp&gt;</response>
+                </interaction>
+                <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                    <prompt>ftp&gt;</prompt>
+                    <command>get NE16/sr_arch.cmp c:\inetpub\ftproot\%transferFilename%</command>
+                    <response>complete</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy startup to net -->
+            <guid>4E005EF8-BAC1-BD15-EF63-DDC6D2547FFE</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to running -->
+            <guid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to startup -->
+            <guid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy running to startup -->
+            <guid>7023D2D2-1A14-7DB8-14F6-8B8485C5015E</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy image to net N/A -->
+            <guid>89F733B6-4C59-CF2B-BD10-CD9EA41BA6DB</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to image N/A -->
+            <guid>905E3CF3-2DAE-2FBE-D466-B933FB675F5D</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- declare image N/A -->
+            <guid>A11600D7-30A0-4378-6B50-A7449E2AAE9A</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- delete image N/A -->
+            <guid>B1B1198E-FF0E-7791-D77C-32901BC11901</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- activate image N/A -->
+            <guid>C86240C6-54EF-F268-6242-BDC42F74E7C8</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- reboot -->
+            <guid>0DD240D0-5C2E-C943-CBE9-88E2E58F9454</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- logout -->
+            <guid>E6C631FC-33CA-812E-55D5-6CF772428705</guid>
+            <interaction>
+                <prompt>ftp&gt;</prompt>
+                <command>bye</command>
+                <response>&gt;</response>
+            </interaction>
+            <interaction disconnect="always" timeoutSeconds="%disconnectTimeoutSeconds%">
+                <prompt>&gt;</prompt>
+                <command>exit</command>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- syntax scan -->
+            <guid>0F008DB4-DCDB-FE9E-BE50-24A86F88FBE2</guid>
+        </deviceCommand>
+    </deviceType>
+</deviceTypeMap>

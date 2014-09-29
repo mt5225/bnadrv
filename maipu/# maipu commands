@@ -1,0 +1,22 @@
+# maipu commands 
+
+## show version
+
+ MyPower (R) Operating System Software
+MP2900-14 system image file (flash0: /flash/rp23-i-6.4.2(R).pck), version 6.4.2(R)(integrity), Compiled on Jul 16 2013, 04:53:33
+Copyright (C) 2013 Maipu Communication Technology Co.,Ltd.All Rights Reserved.
+
+MP2900-14 Version Information
+        System ID           : 00017a5ede68
+        Hardware Model      : MP2900-14 with 512 MBytes SDRAM, 32 MBytes flash
+        Hardware Version    : 002(Hotswap Unsupported)
+        MPU CPLD Version    : 006
+        Monitor Version     : 1.15
+        Software Version    : 6.4.2(R)(integrity)
+        Software Image File : flash0: /flash/rp23-i-6.4.2(R).pck
+        Compiled            : Jul 16 2013, 04:53:33
+
+
+## more off
+
+## show running-config

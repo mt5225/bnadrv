@@ -1,0 +1,54 @@
+
+
+display version
+H3C Comware Platform Software
+Comware Software, Version 5.20, Release 3507P18
+Copyright (c) 2004-2014 Hangzhou H3C Tech. Co., Ltd. All rights reserved.
+H3C WX3024E-LSW uptime is 0 week, 0 day, 1 hour, 34 minutes
+
+H3C WX3024E-LSW
+128M    bytes DRAM
+256M    bytes Nand Flash Memory
+Config Register points to Nand Flash
+
+Hardware Version is VER.B
+CPLD Version is 006
+Bootrom Version is  2.01
+[SubSlot 0] 24GE+4SFP+POE Hardware Version is VER.B
+
+<sw>display boot-loader
+ Slot 1
+  Current boot app is: wx3024e_lsw.bin
+  Next main boot app is: wx3024e_lsw.bin
+  Next backup boot app is: NULL
+<sw>
+
+---- Core Discoveries ----
+
+        disc.imageName=Comware 5.20.3507P18
+        disc.vendor=H3C
+        disc.version=5.20.3507P18
+        disc.versionBuild=3507P18
+        disc.versionMajor=5
+        disc.versionMinor=20
+        disc.versionShort=5.20
+
+
+
+                <capture buffer=".*(H3C)\s+(\S*-\S*-\S*)\s+.*" ignoreFailure="true">
+                    <property name="disc.model">{1} {2}</property>
+                    <property name="disc.vendor">{1}</property>
+                </capture>
+                <capture buffer=".*(H3C)\s+Comware\s+Platform.*" ignoreFailure="true">
+                    <property name="disc.vendor">{1}</property>
+                </capture>
+
+                   <capture
+                    buffer=".*(Comware)\s*(?i)Software.*\s*(?i)version (\d+).(\d+).*\s*(?i)Release (\S+)" ignoreFailure="true">
+                    <property name="disc.versionMajor">{2}</property>
+                    <property name="disc.versionMinor">{3}</property>
+                    <property name="disc.versionBuild">{4}</property>
+                    <property name="disc.version">{2}.{3}.{4}</property>
+                    <property name="disc.imageName">{1} {2}.{3}.{4}</property>
+                    <property name="disc.versionShort">{2}.{3}</property>
+                </capture>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceTypeMap>
+    <!--
+        BNA 版本: 8.5.00.002 b034 u054 
+        导出日期: 09/29/14 14:13:28
+        Ruijie 设备驱动
+        -->
+    <!-- ================================================================== -->
+    <deviceType>
+        <guid>6C478A21-655E-4D70-ABF7-7B31FF8F7955</guid>
+        <name>Ruijie Route Switch</name>
+        <vendor>029873E8-4DC8-4D62-A8AA-53243CB967E1</vendor>
+        <supportedModelInfo>Ruijie Route Switch</supportedModelInfo>
+        <supportedOsVersionInfo>Ruijie Route Switch</supportedOsVersionInfo>
+        <alwaysUseDiff>false</alwaysUseDiff>
+        <ignoreBlanks>false</ignoreBlanks>
+        <defaultMergeCommandGuid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</defaultMergeCommandGuid>
+        <defaultRestoreCommandGuid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</defaultRestoreCommandGuid>
+        <supportsSsh2Access>false</supportsSsh2Access>
+        <supportsTunneledTransfer>true</supportsTunneledTransfer>
+        <supportsFtpTransfer>false</supportsFtpTransfer>
+        <supportsPrivPassword>false</supportsPrivPassword>
+        <supportsSyslogAutoArchiveTriggerInfo>false</supportsSyslogAutoArchiveTriggerInfo>
+        <generalInfo><![CDATA[
+            <ul class="noSpacing">
+            <li>
+                Driver for Ruijie Route Switch
+            </li>
+            </ul>
+        ]]></generalInfo>
+        <supportedConfigurationTrailDeclarations>
+            <supportedTrail>
+                <!-- Running configuration -->
+                <guid>02C89A1F-A5D2-44B0-AE1E-B714EB0E3FAF</guid>
+                <format>ascii</format>
+                <backupCommandGuid>8E21465C-11B4-4A15-9493-C76A0B4B1E49</backupCommandGuid>
+                <mergeCommandGuid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</mergeCommandGuid>
+            </supportedTrail>
+            <supportedTrail>
+                <!-- Startup configuration -->
+                <guid>1D168B48-15CC-416E-AB4A-88E2E7104E2D</guid>
+                <format>ascii</format>
+                <backupCommandGuid>4E005EF8-BAC1-BD15-EF63-DDC6D2547FFE</backupCommandGuid>
+                <restoreCommandGuid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</restoreCommandGuid>
+            </supportedTrail>
+        </supportedConfigurationTrailDeclarations>
+        <commentLines>
+            <line>^\s*#</line>
+        </commentLines>
+        <deviceCommand>
+            <!-- login -->
+            <guid>0E8DB22F-DEF8-987E-1AFB-7BE8BBCC9BEA</guid>
+            <condition test="%accessMode% -EQ- telnet">
+                <interaction optional="true" regex="true">
+                    <prompt>([Uu]ser.*:|[Ll]ogin.*:)</prompt>
+                    <command>%username%</command>
+                    <response>[Pp]assword:</response>
+                    <error retry="true">([Uu]ser.*:|[Ll]ogin.*:)</error>
+                    <error retry="true">timeout expired</error>
+                </interaction>
+                <interaction regex="true">
+                    <prompt>[Pp]assword:</prompt>
+                    <command sensitive="true">%password%</command>
+                    <pauseSeconds>1</pauseSeconds>
+                    <error retry="true">%Wrong password!</error>
+                    <error retry="true">%Bad password!</error>
+                    <error retry="true">Login failed</error>
+                    <error retry="true">Login invalid</error>
+                    <error retry="true">imeout expired</error>
+                </interaction>
+                <interaction regex="true">
+                    <prompt>(&gt;|#)</prompt>
+                    <command>en</command>
+                    <response>assword:</response>
+                </interaction>
+                <interaction regex="true">
+                    <prompt>[Pp]assword:</prompt>
+                    <command sensitive="true">%password%</command>
+                    <response>#</response>
+                </interaction>
+            </condition>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- discover core -->
+            <guid>1E91FAD6-FBB7-5D7C-120F-ABD77583A086</guid>
+            <interaction>
+                <prompt>#</prompt>
+                <command>show version</command>
+                <response>#</response>
+				<capture buffer=".*RGOS\s+(.*)\s+Release.*" ignoreFailure="true">
+                    <property name="disc.version">{1}</property>
+                    <property name="disc.imageName">RGOS {1}</property>
+                </capture>
+                <capture buffer=".*Switch\((.*)\).*" ignoreFailure="true">
+                    <property name="disc.model">{1}</property>
+                    <property name="disc.vendor">Ruijie</property>
+                </capture>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy running to net -->
+            <guid>8E21465C-11B4-4A15-9493-C76A0B4B1E49</guid>
+            <supportsTunneled>true</supportsTunneled>
+            <interaction>
+                    <prompt>#</prompt>
+                    <command>terminal length 0</command>
+                    <response>#</response>
+            </interaction>
+            <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                <prompt>#</prompt>
+                <command>show running-config</command>
+                <response>#</response>
+                <capture>
+                    <property name="fileContents"/>
+                </capture>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy startup to net -->
+            <guid>4E005EF8-BAC1-BD15-EF63-DDC6D2547FFE</guid>
+			<supportsTunneled>true</supportsTunneled>
+            <interaction>
+                    <prompt>#</prompt>
+                    <command>terminal length 0</command>
+                    <response>#</response>
+            </interaction>
+            <interaction timeoutSeconds="%defaultResponseTimeoutSeconds% -PLUS- %maxTextTransferDurationSeconds%">
+                <prompt>#</prompt>
+                <command>show startup-config</command>
+                <response>#</response>
+                <capture>
+                    <property name="fileContents"/>
+                </capture>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to startup -->
+            <guid>61A43CB3-2D57-66F7-32E3-59A1A1CD291E</guid>
+        </deviceCommand>	
+		<deviceCommand>
+            <!-- copy net to running -->
+            <guid>5421B3AE-2C94-0519-5D07-B4971BB15C7D</guid>
+			<supportsTunneled>true</supportsTunneled>
+			<assert condition="%transferMode% -EQ- tunneled"
+                key="assert.onlyTunneledMerge.supported" onFailure="skip"/>
+            <loop input="fileContents" variable="fileLine">
+                <condition test="-NOT- (%loop.fileLine% -EQ- return)">
+                    <!-- Ignoring line return because it will exit system-view mode -->
+                    <interaction>
+                        <prompt>#</prompt>
+                        <command>%loop.fileLine%</command>
+                        <response>#</response>
+                        <syntaxErrorCheck property="syntaxErrorOccurred"/>
+                    </interaction>
+                </condition>
+                <!-- in config mode depending on the nesting
+                    level the prompt changes, so look for # -->
+                <break condition="(-EXISTS- stopTunnelingOnSyntaxErrors) -AND- (-EXISTS- syntaxErrorOccurred)"/>
+            </loop>
+			<interaction>
+                <!-- recapture any new prompt -->
+                <command/>
+                <capture>
+                    <property name="prompt"/>
+                </capture>
+            </interaction>
+            <syntaxErrors>
+                <syntaxError>.*[Uu]nrecognized command.*</syntaxError>
+                <syntaxError>.*[Tt]oo many parameters found at.*</syntaxError>
+                <syntaxError>.*[Ii]ncomplete command found at.*</syntaxError>
+                <syntaxError>.*[Ww]rong parameter found at.*</syntaxError>
+            </syntaxErrors>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy running to startup -->
+            <guid>7023D2D2-1A14-7DB8-14F6-8B8485C5015E</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy image to net -->
+            <guid>89F733B6-4C59-CF2B-BD10-CD9EA41BA6DB</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- copy net to image -->
+            <guid>905E3CF3-2DAE-2FBE-D466-B933FB675F5D</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- declare image -->
+            <guid>A11600D7-30A0-4378-6B50-A7449E2AAE9A</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- delete image -->
+            <guid>B1B1198E-FF0E-7791-D77C-32901BC11901</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- activate image -->
+            <guid>C86240C6-54EF-F268-6242-BDC42F74E7C8</guid>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- reboot -->
+            <guid>0DD240D0-5C2E-C943-CBE9-88E2E58F9454</guid>
+            <interaction>
+                <prompt>#</prompt>
+                <command>reboot</command>
+                <response>Continue</response>
+            </interaction>
+            <interaction disconnect="always" timeoutSeconds="%disconnectTimeoutSeconds%">
+                <command>y</command>
+                <pauseSeconds>1</pauseSeconds>
+                <error>#</error>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- logout -->
+            <guid>E6C631FC-33CA-812E-55D5-6CF772428705</guid>
+            <interaction disconnect="always" timeoutSeconds="%disconnectTimeoutSeconds%">
+                <command>exit</command>
+            </interaction>
+        </deviceCommand>
+        <deviceCommand>
+            <!-- syntax scan -->
+            <guid>0F008DB4-DCDB-FE9E-BE50-24A86F88FBE2</guid>
+        </deviceCommand>
+    </deviceType>
+</deviceTypeMap>
